@@ -2,12 +2,9 @@
     box-sizing: border-box;
 } 
 
-
 html, body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height:100%;
-    width: 100%;
     display: flex;
     flex: auto;
 }
@@ -17,6 +14,7 @@ html, body {
     background-color: rgb(65, 1, 56);
     width: 320px;
     color: rgb(184, 170, 187);
+    height: 100vh;
 }
 
 .side-menu-header {
@@ -61,8 +59,8 @@ html, body {
 }
 
 .scroll {
-    height:85%;
-    overflow-y: scroll;
+    height:84%;
+    overflow-y: auto;
 }
 
 .apps {
@@ -184,4 +182,135 @@ html, body {
 .app:hover {
     background-color: rgb(41, 0, 35);
     cursor: pointer;
+}
+
+.chatbox {
+    background-color: white;
+    height: 100vh;
+    flex: 1 1;
+}
+
+.header {
+    display: flex;
+}
+
+.channel-name {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.options {
+    display: flex;
+    list-style-type: "|";
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.options>*:first-child{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.chat-option {
+    padding: 10px;
+}
+
+.right-panel {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.other-option {
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.chat-history {
+    overflow-y: auto;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: .5px solid rgb(163, 163, 163);
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 0;
+}
+.date:before{
+    content: "";
+    flex: 1 1;
+    border-bottom: .5px solid rgb(163, 163, 163);
+    margin: auto;
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.user-image {
+    height: 60px;
+    width: 60px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.user-image {
+    align-self: center;
+}
+
+.info {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.user-info {
+    display: flex;
+
+}
+
+.username {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.time {
+    margin: 5px;
+    font-size: 18px;
+    align-self: flex-end;
+    color: grey;
+}
+
+.content {
+    display: block;
+    margin-top: 0;
+}
+
+.text-box{
+    flex: 1 1;
+    align-self: flex-end;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+}
+
+.type-box {
+    font-size: 20px;
+    height: 100px;
 }
