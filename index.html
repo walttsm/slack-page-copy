@@ -20,29 +20,135 @@
         <div class="search">
             <input placeholder="Ir para...">
         </div>
+        <div class="scroll">
+            <div class="apps">Apps</div>
 
-        <div class="apps">Apps</div>
+            <div class="channels-window">
 
-        <div class="janela-canais">
-            <p class="option">Canais</p>
-            <ul class="canais">
-                <li class="canal"># cafezinho</li>
-                <li class="canal"># geral</li>
-                <li class="canal"># npi</li>
-                <li class="canal"># barrierlesseducation</li>
-                <li class="canal"># peerreview</li>
-                <li class="canal"># darkhistory</li>
-                <li class="canal"># testingchatbot</li>
-            </ul>
+                <ul class="channels">
+                    <p class="option channels-label">Canais</p>
+                    <div class="channel-box">
+                        <li class="channel"># cafezinho</li>
+                    </div>
+                    <div class="channel-box">
+                        <li class="channel"># geral</li>
+                    </div>
+                    <div class="channel-box">
+                        <li class="channel"># npi</li>
+                    </div>
+                    <div class="channel-box">
+                        <li class="channel"># barrierlesseducation</li>
+                    </div>
+                    <div class="channel-box">
+                        <li class="channel"># peerreview</li>
+                    </div>
+                    <div class="channel-box">
+                        <li class="channel"># darkhistory</li>
+                    </div>
+                    <div class="channel-box">
+                        <li class="channel"># testingchatbot</li>
+                    </div>
+                </ul>
+                <p class="add-button add-channel">+ Adicionar um canal</p>
+            </div>
+
+
+
+            <div class="option direct-messages">
+                <p class="direct-messages-label">Mensagens diretas</p>
+                <ul class="contacts">
+                    <li class="online-contact">Contact 1</li>
+                    <li class="online-contact">Contact 2</li>
+                    <li class="offline-contact">Contact 3</li>
+                </ul>
+
+                <p class="add-button add-contact">+ Convidar pessoas</p>
+            </div>
+
+            <div class="option recent-apps">
+                <p class="recent-apps-label">Apps recentes</p>
+                <ul class="recent-apps-list">
+                    <li class="app">Recent app #1</li>
+                    <li class="app">Recent app #2</li>
+                    <li class="app">Recent app #3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="chatbox">
+        <div class="header">
+            <div class="left-panel">
+                <p class="channel-name">geral</p>
+                <div id="options">
+                    <ul>
+                        <li>star</li>
+                        <li>people online</li>
+                        <li>itens fixados</li>
+                        <li>adicionar assunto</li>
+                    </ul>
+                </div>
+
+                <div class="right-panel">
+                    <p id="info">info</p>
+                    <p id="configs">configs</p>
+                    <input placeholder="search">
+                    <p>mostrar atividade</p>
+                    <p>exibir favoritos</p>
+                    <p>mais items</p>
+                </div>
+            </div>
         </div>
 
-        <p class="option">Adicionar um canal</p>
-    </div>
+        <div class="chat-history">
+            <span class="date">04 de fevereiro de 2020</span>
+            <div class="message">
+                <img src="data:image/png;base64,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"
+                    alt="user image">
+                <div class="info">
+                    <p class="username">user #1</p>
+                    <p class="time">15h32</p>
+                </div>
+                <p class="content">
+                    The :before and :after elements are positioned absolutely
+                    so we can pull one to the left and one to the right. Also,
+                    the width (40% in this case) is very dependent of the
+                    width of the text inside.. have to think about a solution
+                    for that.
+                </p>
+            </div>
+            <span class="date">06 de fevereiro de 2020</span>
+            <div class="message">
+                <img src="data:image/png;base64,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"
+                    alt="user image">
+                <div class="info">
+                    <p class="username">user #2</p>
+                    <p class="time">12h45</p>
+                </div>
+                <p class="content">
+                    At least the top: 1.2em makes sure the lines stay more or
+                    less in the center of the text even if you have different
+                    font size.
+                </p>
+                <span class="date">10 de fevereiro de 2020</span>
+                <div class="message">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAACFhYWKioqCgoLz8/P6+vp9fX2JiYnq6urb29uAgICRkZHf399VVVXl5eVcXFynp6cqKiqcnJxvb2/MzMxCQkLAwMBhYWHGxsYODg6tra0UFBROTk65ubmioqJzc3PT09MnJyccHBwxMTGXl5c4ODgZGRlAQEBoaGj7NqF0AAAFkklEQVR4nO2diVrqMBBGjdgiCJZF9kUWL/fy/i94LYiWsrTY+eef8uW8gDkfMZlMMtOHBxK9p9W6yfrjeOrPLqbOHgeI2qS/83Nb9kggBIPW1H3RYw8GwLLacd90AvZwpKm1Zy7JkD0gWYLRm0txV/+GUeMj7efcLGQPS4z58FTvjjaLWmN83s+5FntsEgxeL+nt1pqyz9OocU1vx4Q9xiKMWpl+n0zfSxqcBpMzi+cFPiq90u39UWOd229H57VbL5FlszrNdjplM+yWY8LWT2KXG5g1mtaX1/q2gN9esm15utYWRf12NMw6/hHxi2mzVc4SbcQEnetHbJ1TRoJ+MQO2UJq2sKBzf9hKx2RHoLfzxJZK8gQQdK7K1vrhHSLoXJctdmAOEnRuzlbbE108xBdmWmPL7bh6jC+IiUQHbo7GWNgWcXM0ZsXWQ2z1x/AXG+xP6NwHW3AJFuTnjR/hhg2yYSd7iAXpcwUDuKBz3MwNdjPcw70qRsXcSbiZf8S5MA33KPyiYPhINawqGL7cvSE3m+ENvaE39IbesDj3v+N7Q2/oDfmGmEsnS4b+N/SG3jDm2Rt6Q2/oDb1hyQ3xl2vOVbyhN/SG3tAbekNvSDZ89oalNyxS5JSXBdXwr4Ih9e2exnMa5oOaOvL9c5IWqTCxiX5a+sOaUwalsRce4LyLKlxMeQMLiqHGDfcBToGQzkK6h1NyWVc05Dz2BlYDpRlz1tKwr2bIamWjEZTueeMICtZuZ8F6JtxTM2Q9Zq+pGbLKEAPJCvxrbGhNFrTiNtZCo5PDiOHlMTQqZmJ4NYhaSw2v3jnQSNN8nn+J3VxytfMqDLOFpM5Sw7zmnqgYMovXmiqGzBZgoYohtYhUI2PK7RyhkavhtsXSqHQm9zbDT1N2exN8aEpvjAE3ZAs+yDQSvAy/HdYAbDhiC8JXUwPdPldQwQ5b7wH9j8j/N0SfLyy0w5ZuenkMf6FBJ2tMtKNFthmi98HagezgYqM3JPKCZsmW25O/wfytbNhqX+CmqY1JinyyYKYNPeoOasEW+2YJMmQ3FEyAebNgISY9ECEExzZa7H7RBRhaCLp/CP+JC76ynVKIz1NbczRGOl9j4diUQvasb2kdPSAb2ZiJZpKIGrJlznL3hrKJUxPZixSy/4eGQtJvZLcLC/3008jmTW2FbHtkQ1Mrp/sksrkMdif2c8ieERdsnTPMsod9A9ZOFp+EsqlvG8nuI6SfRxm4GU1x/4bSV1DmDsDitxdGbiwSSD8doj8UOkH6Dd87W+gE6cz+li2URv42n/tpkjQBolCva+gU3MO8GuqYWU8jVGHJysqmiKsrMbLcLGGCVtI1yO6QNj6ZuwYaGvj8Ibre2cJyiq1ZtzBNp1DDNVsP3/+DfwmFuMFPwj9j4B617aE/bcMXO7Pjb3z3D+5qOpJNA59nxjspLnVKuZ1rcfb9pmY3s63+plFDV3SlWeieFQPNXm0HqnqralAh+MVUdBwhWae8dPHXGWEbW6uWxaqNdQwnWo2TLrOZAx0Hej3ortFHPUXpaQQw+YCEOXWtACYfQ+ksXFOvg2Be3iS7RdYYG3w2VakwJ9D4XM7veJQIAUJWAJOPRtGtI0SnYYpT6AVcONFpV1aM9e/fMc7RWSYpNr971mAkgMnHL8KcnlbPfClebwtzjAUw+bghzInsBTD5WOQLc4wGMPl4yQ5zAq2uqygyMh0hsj+CFteS5PYDmHxcuq/SaWSpwvhcmDNHtijR5yMd5tTKtsFn0zpaVsP7E/xUTB6s9Drka5K8sWKmsXEkT46aHzbS4/nuDSvesPR4w/LjDcuPNyw/3rD8eMPy4w3LjzcsP96w/CSzGGW/jjlP8jdsswcDIZnah/QfZXPcW/Ief8TU7cxyqPeFZg3G20PG+z8IMYgd+JyOwwAAAABJRU5ErkJggg=="
+                        alt="user image">
+                    <div class="info">
+                        <p class="username">user #2</p>
+                        <p class="time">12h45</p>
+                    </div>
+                    <p class="content">
+                        These are clever, but I sure hope the OP doesn't want this for inside a form tag.
+                        If he does, as I'm sure you know, he could simply use fieldset and legend.
+                    </p>
 
-    </div>
-    <div class="chat">
+                </div>
 
-    </div>
+                <div class="text-box">
+
+                </div>
+            </div>
 </body>
 
 </html>
